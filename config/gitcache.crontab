@@ -1,0 +1,2 @@
+0 * * * * bash /app/gitcache.org/scripts/scheduler.sh &> /app/gitcache.org/log/scheduler.$(date +\%H).log
+30 9 * * * bash /app/gitcache.org/scripts/list.sh get all | bash /app/gitcache.org/scripts/db.sh add
